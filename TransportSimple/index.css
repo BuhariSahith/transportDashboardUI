@@ -3,15 +3,17 @@
   margin: 0px;
   padding: 0px;
 }
-
+input::-webkit-input-placeholder {
+  padding-left: 10px;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   width: 100vw;
+  overflow-x: hidden;
 }
 .headerwrapper {
   width: 100vw;
-  /* height: 60px; */
   background-color: #595fab;
 }
 
@@ -61,7 +63,6 @@ body {
   border-bottom: 2px solid #595fab;
 }
 
-
 /* SUMMARY CSS */
 .summary .summary-detail-wrapper {
   height: 170px;
@@ -75,7 +76,7 @@ body {
 .summary .summary-detail-wrapper div button {
   width: 150px;
   height: 30px;
-  background-color: #07C060;
+  background-color: #07c060;
   border: none;
   outline: none;
   padding: 1px;
@@ -92,17 +93,16 @@ body {
 }
 
 .transaction-box-wrapper div .box-1 .transaction-content {
-  background-color: #8190FF;
-  height: 80px; 
-
+  background-color: #8190ff;
+  height: 80px;
 }
-.transaction-box-wrapper div .box-2 .transaction-content{
-  background-color: #FF5F83;
-  height: 80px; 
+.transaction-box-wrapper div .box-2 .transaction-content {
+  background-color: #ff5f83;
+  height: 80px;
 }
 .transaction-box-wrapper div .box-3 .transaction-content {
-  background-color: #FF9056;
-  height: 80px; 
+  background-color: #ff9056;
+  height: 80px;
 }
 
 .transaction-box-wrapper div .transaction-content {
@@ -110,7 +110,7 @@ body {
 }
 
 .transaction-box-wrapper div .transaction-content .moneyIcon,
-.transaction-box-wrapper div .transaction-content .moneyIconOut{
+.transaction-box-wrapper div .transaction-content .moneyIconOut {
   position: absolute;
   right: 25px;
   bottom: 30px;
@@ -131,4 +131,156 @@ body {
 
 .transaction-box-wrapper div .transaction-content .goingOut {
   margin-right: 5rem;
+}
+
+/* Cash Summary Section Stylings */
+.cash-summary-wrapper {
+  width: 100vw;
+  border: 1px solid #d8e1e9;
+}
+
+.cash-summary-wrapper .first-row-wrap div select {
+  width: 140px;
+  height: 40px;
+  outline: none;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.cash-summary-wrapper .sec-row-wrap div div .dot {
+  width: 20px;
+  height: 19px;
+  border-radius: 50px;
+}
+.cash-summary-wrapper .sec-row-wrap div div .dot.circle1 {
+  background-color: #ff6384;
+}
+.cash-summary-wrapper .sec-row-wrap div div .dot.circle2 {
+  background-color: #ff9f40;
+}
+
+.cash-summary-wrapper .third-row-wrap .graph img {
+  object-fit: cover;
+}
+
+.cash-summary-wrapper .first-row-wrap div h6 {
+  flex: 3;
+}
+
+.cash-summary-wrapper .fourth-row .transaction-table {
+  width: 1400px;
+}
+.cash-summary-wrapper
+  .fourth-row
+  .transaction-table
+  .main-sub:nth-of-type(1)
+  .cash-summary-wrapper
+  .fourth-row
+  .transaction-table
+  .main-sub:nth-of-type(2) {
+  flex: 1;
+}
+
+.cash-summary-wrapper .fourth-row .transaction-table .sub2 .input-wrap input {
+  width: 300px;
+  height: 35px;
+  outline: none;
+  border: none;
+  position: relative;
+}
+.cash-summary-wrapper .fourth-row .transaction-table .sub2 .input-wrap {
+  border-bottom: 1px solid black;
+}
+
+.cash-summary-wrapper .fourth-row .transaction-table .sub2 div .search-icon {
+  position: absolute;
+  right: 37.6rem;
+}
+
+.cash-summary-wrapper .fourth-row .transaction-table .sub2 div select {
+  width: 60px;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f8f8fb !important;
+}
+
+.table-striped tr th {
+  padding: 1rem;
+}
+
+.cash-summary-wrapper .fifth-row .pagination .odd {
+  width: 33px;
+  height: 28px;
+  background-color: #595fab;
+  border-radius: 7px;
+  position: relative;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cash-summary-wrapper .fifth-row .pagination .odd .inside {
+  position: absolute;
+  bottom: 5px;
+  right: 12px;
+}
+.cash-summary-wrapper .fifth-row .pagination {
+  margin-right: 6rem;
+}
+
+.cash-summary-wrapper .fifth-row .pagination div {
+  padding: 1rem;
+}
+
+
+.cash-summary-wrapper .fourth-row .transaction-table table tbody tr .td-box {
+  width: 24px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #9FACB8;
+}
+
+.cash-summary-wrapper .fourth-row .transaction-table table tbody tr td input {
+  width: 100px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #9FACB8;
+  outline: none;
+}
+
+.cash-summary-wrapper .fourth-row .transaction-table table tbody tr td input::-webkit-input-placeholder {
+  padding-left: 10px;
+}
+
+
+.cash-summary-wrapper .seventh-row button {
+    width: 150px;
+    height: 40px;
+    border: 1px solid #595FAB;
+    color: #595FAB;
+    font-size: 12px;
+}
+
+.footer-wrap {
+  width: 100vw;
+  height: 40px;
+  background-color: #fff;
+  font-size: 12px;
+  color: #5A6B7B;
+  font-weight: normal;
+  border: 0.9px solid #eef0f3 ;
+}
+
+.footer-wrap p {
+  flex: 1;
+}
+
+.footer-wrap .details span {
+  padding-right: 2rem;
 }
