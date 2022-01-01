@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  width: 100vw;
+}
+.headerwrapper {
+  width: 100vw;
+  /* height: 60px; */
+  background-color: #595fab;
+}
+
+.headerwrapper .header .logo {
+  background-color: #fff;
+  width: 235px;
+  height: 34px;
+}
+
+.headerwrapper .header .logo img {
+  margin: 5px 8px;
+}
+
+.headerwrapper .header .input-box {
+  position: relative;
+}
+.headerwrapper .header .input-box input {
+  height: 40px;
+  width: 350px;
+  outline: none;
+}
+
+.headerwrapper .header .input-box .search-icon {
+  position: absolute;
+  right: 6px;
+  top: 7px;
+}
+
+.headerwrapper .header .profile-select {
+  color: #fff;
+}
+
+.headerwrapper .header-next {
+  box-sizing: border-box;
+  height: 50px;
+  background-color: #fefefe;
+}
+
+.headerwrapper .header-next div span {
+  vertical-align: text-top;
+  font-weight: bolder;
+  color: #5a6b7b;
+  font-size: 14px;
+}
+
+.headerwrapper .header-next .main-five-box {
+  border-bottom: 2px solid #595fab;
+}
+
+
+/* SUMMARY CSS */
+.summary .summary-detail-wrapper {
+  height: 170px;
+  border: 0.1px solid #f2efef;
+}
+
+.summary .summary-detail-wrapper div .hdfc {
+  margin-left: 30.9rem;
+}
+
+.summary .summary-detail-wrapper div button {
+  width: 150px;
+  height: 30px;
+  background-color: #07C060;
+  border: none;
+  outline: none;
+  padding: 1px;
+}
