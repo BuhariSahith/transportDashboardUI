@@ -80,3 +80,55 @@ body {
   outline: none;
   padding: 1px;
 }
+
+/* Transaction Box stylings */
+.transaction-box-wrapper {
+  color: #fff;
+}
+.transaction-box-wrapper div .box:nth-of-type(1),
+.transaction-box-wrapper div .box:nth-of-type(2),
+.transaction-box-wrapper div .box:nth-of-type(3) {
+  flex: 2;
+}
+
+.transaction-box-wrapper div .box-1 .transaction-content {
+  background-color: #8190FF;
+  height: 80px; 
+
+}
+.transaction-box-wrapper div .box-2 .transaction-content{
+  background-color: #FF5F83;
+  height: 80px; 
+}
+.transaction-box-wrapper div .box-3 .transaction-content {
+  background-color: #FF9056;
+  height: 80px; 
+}
+
+.transaction-box-wrapper div .transaction-content {
+  position: relative;
+}
+
+.transaction-box-wrapper div .transaction-content .moneyIcon,
+.transaction-box-wrapper div .transaction-content .moneyIconOut{
+  position: absolute;
+  right: 25px;
+  bottom: 30px;
+}
+
+.transaction-box-wrapper div .transaction-content .moneyIconIn {
+  position: absolute;
+  right: 20rem;
+  bottom: 30px;
+}
+
+/* .transaction-box-wrapper div .transaction-content .goingOut::before {
+  width: 10px;
+  height: 40px;
+  content: "";
+  background-color: #fff;
+} */
+
+.transaction-box-wrapper div .transaction-content .goingOut {
+  margin-right: 5rem;
+}
