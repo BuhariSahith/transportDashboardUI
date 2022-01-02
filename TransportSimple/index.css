@@ -6,6 +6,7 @@
 input::-webkit-input-placeholder {
   padding-left: 10px;
 }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -34,7 +35,23 @@ body {
   height: 40px;
   width: 350px;
   outline: none;
+  border-radius: 3px;
+  border: none;
+  
 }
+
+.headerwrapper .header .input-box select {
+  width: 160px;
+  height: 41px;
+  outline: none;
+  border-radius: 3px;
+  margin: 0px;
+  background-color: #F1F4F9;
+  padding-left: 0.6rem;
+  position: relative;
+  left: 4px;
+}
+
 
 .headerwrapper .header .input-box .search-icon {
   position: absolute;
@@ -70,7 +87,7 @@ body {
 }
 
 .summary .summary-detail-wrapper div .hdfc {
-  margin-left: 30.9rem;
+  margin-left: 29.9rem;
 }
 
 .summary .summary-detail-wrapper div button {
@@ -229,7 +246,7 @@ body {
   right: 12px;
 }
 .cash-summary-wrapper .fifth-row .pagination {
-  margin-right: 6rem;
+  margin-right: 2rem;
 }
 
 .cash-summary-wrapper .fifth-row .pagination div {
@@ -283,4 +300,15 @@ body {
 
 .footer-wrap .details span {
   padding-right: 2rem;
+}
+
+.cash-summary-wrapper .fourth-row .transaction-table .table tbody tr th {
+  padding: 1.5rem !important;
+  vertical-align: middle;
+}
+.cash-summary-wrapper .fourth-row .transaction-table .table tbody tr {
+  vertical-align: middle;
+}
+.cash-summary-wrapper .fourth-row .transaction-table .table .other-table thead tr th {
+  padding: 1.5rem !important;
 }

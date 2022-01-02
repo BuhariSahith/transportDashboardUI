@@ -24,6 +24,11 @@
                 </div>
 
                 <div class="input-box m-2">
+                    <select name="" id="">
+                        <option value="" selected>All</option>
+                        <option value="">admin</option>
+                        <option value="">user</option>
+                    </select>
                     <input type="text" placeholder="search...">
                     <img class="search-icon" src="./assets/seacrh.png" alt="">
                 </div>
@@ -86,7 +91,6 @@
         </div>
     </header>
 
-
     <!-- Summary Content -->
     <section class="summary mb-4">
 
@@ -99,7 +103,7 @@
                 <div class="d-flex justify-content-between">
                     <p>Acc.No : <span class="fw-bolder">123456890QWERTY</span></p>
                     <p>Branch : <span class="fw-bolder"> kasturi Nagar Branch</span></p>
-                    <button type="button" class=" fw-bold btn btn-success rounded-pill ">Active</button>
+                    <button type="button" class=" fw-bold btn btn-success rounded-pill me-4">Active</button>
                 </div>
             </div>
             <div>
@@ -296,28 +300,30 @@
                             </tr>
                         </tbody>
                     </table>
+
+                    <div class="fifth-row mt-5">
+                        <div class="pagination d-flex justify-content-sm-end p-1">
+                            <div class=""><img src="./assets/lesser.png" alt=""></div>
+                            <div class="">1</div>
+                            <div class="odd"> <span class="inside">2</span> </div>
+                            <div class="">3</div>
+                            <div class="">4</div>
+                            <div class="">5</div>
+                            <div class=""></div>
+                            <div><img src="./assets/greater.png" alt=""></div>
+                        </div>
+        
+                    </div>
                 </div>
             </div>
 
-            <div class="fifth-row mt-5">
-                <div class="pagination d-flex justify-content-sm-end p-1">
-                    <div class=""><img src="./assets/lesser.png" alt=""></div>
-                    <div class="">1</div>
-                    <div class="odd"> <span class="inside">2</span> </div>
-                    <div class="">3</div>
-                    <div class="">4</div>
-                    <div class="">5</div>
-                    <div class=""></div>
-                    <div><img src="./assets/greater.png" alt=""></div>
-                </div>
-
-            </div>
+           
 
             <div class="fourth-row ms-5 mt-5">
                 <div class="transaction-table border-1 shadow bg-body ">
 
                     <table class="table">
-                        <thead class="p-4">
+                        <thead class="p-4 other-table">
                             <tr>
                                 <th scope="col">Select </th>
                                 <th scope="col">Date Of Bills</th>
@@ -347,7 +353,9 @@
                                 <td><input type="text" placeholder="1000"></td>
                             </tr>
                             <tr>
-                                <th scope="row"><div class="td-box"></div></th>
+                                <th scope="row">
+                                    <div class="td-box"></div>
+                                </th>
                                 <td>1/19/2018</td>
                                 <td>1234567890</td>
                                 <td>1/19/2018</td>
@@ -359,7 +367,9 @@
                                 <td><input type="text" placeholder="1000"></td>
                             </tr>
                             <tr>
-                                <th scope="row"><div class="td-box"></div></th>
+                                <th scope="row">
+                                    <div class="td-box"></div>
+                                </th>
                                 <td>1/19/2018</td>
                                 <td>1234567890</td>
                                 <td>1/19/2018</td>
@@ -371,7 +381,9 @@
                                 <td><input type="text" placeholder="1000"></td>
                             </tr>
                             <tr>
-                                <th scope="row"><div class="td-box"></div></th>
+                                <th scope="row">
+                                    <div class="td-box"></div>
+                                </th>
                                 <td>1/19/2018</td>
                                 <td>1234567890</td>
                                 <td>1/19/2018</td>
@@ -382,7 +394,7 @@
                                 <td>0</td>
                                 <td><input type="text" placeholder="1000"></td>
                             </tr>
-                    
+
                         </tbody>
                     </table>
                 </div>
@@ -398,7 +410,8 @@
     <!-- Footer -->
     <footer>
         <div class="footer-wrap d-flex">
-            <p class="p-3 ms-3">  © 2018 Transport Simple. Trademarks and brands are the property of their respective owners.</p>
+            <p class="p-3 ms-3"> © 2018 Transport Simple. Trademarks and brands are the property of their respective
+                owners.</p>
             <div class="details p-3 me-4">
                 <span>Terms</span>
                 <span>Contact</span>
@@ -410,5 +423,4 @@
     </footer>
 
 </body>
-
 </html>
